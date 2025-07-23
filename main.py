@@ -1,6 +1,8 @@
 from app.pdf_parser import extract_text_with_positions
 from app.section_splitter import split_sections
+from app.persona_embedding import generate_persona_jd_embeddings
 from app.keyphrase_extractor import extract_keyphrases
+from app.section_embedding import embed_sections, save_embeddings_to_file
 import os
 import json
 
@@ -37,6 +39,7 @@ def main():
     output_file = "output/parsed_resume.json"
     model_path = "models/all-MiniLM-L6-v2"
 
+    # Check input PDF file
     if not os.path.exists(input_file):
         print(f"❌ Input file not found: {input_file}")
         return
@@ -55,6 +58,22 @@ def main():
 
     print("🧠 Extracting keyphrases for each section...")
     keyphrases = extract_keyphrases(sections, model_path)
+
+    # NEW: Persona + JD Embedding Integration
+    persona_file = "input/persona.txt"
+    jd_file = "input/job_description.txt"
+    embedding_output_file = "output/persona_jd_embeddings.json"
+
+    if os.path.exists(persona_file) and os.path.exists(jd_file):
+        print("🔗 Generating Persona + JD Embeddings...")
+        generate_persona_jd_embeddings(persona_file, jd_file, model_path, embedding_output_file)
+    else:
+        print("⚠️ Persona or JD file not found, skipping embedding generation.")
+
+    # ✅ NEW SECTION EMBEDDING
+    print("🔎 Embedding sections with keyphrases...")
+    section_embeddings = embed_sections(sections, keyphrases, model_path)
+    save_embeddings_to_file(section_embeddings, "output/section_embeddings.json")
 
     print("📦 Saving final JSON output...")
     save_final_json(metadata, sections, keyphrases, output_file)
