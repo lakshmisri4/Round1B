@@ -61,6 +61,28 @@ def save_sections_json(sections, output_path):
     with open(output_path, "w", encoding="utf-8") as f:
         json.dump(output_data, f, indent=2)
 
+# section_splitter.py
+def split_sections(parsed_data, model_path, n_clusters=6):
+    model = SentenceTransformer(model_path)
+    texts = [item["text"] for item in parsed_data]
+    embeddings = model.encode(texts)
+
+    kmeans = KMeans(n_clusters=n_clusters, random_state=42)
+    labels = kmeans.fit_predict(embeddings)
+
+    sections = []
+    for i in range(n_clusters):
+        section_texts = [texts[j] for j in range(len(labels)) if labels[j] == i]
+        pages = [parsed_data[j]["page_number"] for j in range(len(labels)) if labels[j] == i]
+        sections.append({
+            "title": f"Section {i+1}",
+            "content": " ".join(section_texts),
+            "page": min(pages) if pages else 1
+        })
+
+    return sections
+
+
 def main():
     os.makedirs("output", exist_ok=True)
     print("[+] Extracting text blocks...")

@@ -1,5 +1,7 @@
 pymupdf
-scikit-learn
 sentence-transformers
 keybert
+scikit-learn
 numpy
+torch
+transformers
