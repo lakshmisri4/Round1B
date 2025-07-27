@@ -1,0 +1,83 @@
+{
+  "metadata": {
+    "input_documents": [
+      "The Ultimate PDF Sharing Checklist.pdf"
+    ],
+    "persona": "HR professional",
+    "job_to_be_done": "Create and manage fillable forms for onboarding and compliance."
+  },
+  "sections": [
+    {
+      "title": "Section 1",
+      "page_number": 2,
+      "content": "chosen platform? stakeholders? chosen platform? Conclusion",
+      "keyphrases": [
+        "chosen platform stakeholders",
+        "platform stakeholders chosen",
+        "stakeholders chosen platform",
+        "platform stakeholders",
+        "chosen platform conclusion"
+      ]
+    },
+    {
+      "title": "Section 2",
+      "page_number": 1,
+      "content": "The Ultimate PDF Sharing Checklist Sharing PDFs can be a breeze with Adobe Acrobat. Whether you're collaborating on a project, seeking feedback, or simply distributing into the essentials of sharing PDFs effectively. General Sharing Checklist the PDF you want to share? •    Choose Your Sharing Method •   Are you sharing via email, link, or a third-party app like Microsoft Teams or WhatsApp? •    Set Permissions access? •    Create and Share the Link •   Did you generate a shareable link and copy it for distribution? •   Have you sent the email or shared the link through your In the real estate industry, sharing documents efficiently is crucial for help you manage your PDF sharing needs. Real Estate Sharing Checklist the property listing or contract you need to share? •    Choose Your Sharing Method •   Are you sharing via email, link, or a third-party app like Microsoft Teams or WhatsApp? •    Set Permissions just view it? •    Create and Share the Link •   Did you generate a shareable link and copy it for distribution? •   Have you sent the email or shared the link through your Sharing PDFs with Adobe Acrobat is straightforward and efficient, sharing process is smooth and professional. Start sharing smarter today.",
+      "keyphrases": [
+        "pdf sharing needs",
+        "manage pdf sharing",
+        "pdf sharing",
+        "pdf sharing checklist",
+        "sharing pdfs"
+      ]
+    },
+    {
+      "title": "Section 3",
+      "page_number": 1,
+      "content": "information, this checklist will ensure you cover all the bases. Let's dive fields? •    Follow Up following up as needed? Sharing Checklist for Real Estate Professionals closing deals and keeping clients informed. Here's a tailored checklist to •    Add Clients and Stakeholders •    Follow Up following up with clients for feedback or next steps? capture your clients' attention. whether you're working on a general project or managing real estate",
+      "keyphrases": [
+        "checklist real estate",
+        "information checklist",
+        "checklist add clients",
+        "informed tailored checklist",
+        "information checklist ensure"
+      ]
+    },
+    {
+      "title": "Section 4",
+      "page_number": 1,
+      "content": "•    Customize Your Message •   Have you added a personal touch to the subject and message Professional Tip: Clear Instructions Ensure your email instructions are clear and concise to avoid any •    Customize Your Message •   Have you added a personal touch to the subject and message fields, highlighting key property details? Professional Tip: Highlight Key Details Make sure to emphasize important property details in your message to",
+      "keyphrases": [
+        "touch subject message",
+        "message professional tip",
+        "customize message",
+        "message fields highlighting",
+        "subject message fields"
+      ]
+    },
+    {
+      "title": "Section 5",
+      "page_number": 1,
+      "content": "•    Open Your PDF •   Have you launched Acrobat or Acrobat Reader and opened document? •   Are you tracking who has accessed the document and •    Open Your Property Document •   Have you launched Acrobat or Acrobat Reader and opened •   Have you decided if clients can comment on the document or •   Are you tracking who has accessed the document and documents. By following these checklists, you can ensure that your",
+      "keyphrases": [
+        "acrobat reader opened",
+        "document tracking accessed",
+        "accessed document",
+        "tracking accessed document",
+        "reader opened document"
+      ]
+    },
+    {
+      "title": "Section 6",
+      "page_number": 1,
+      "content": "•   Have you decided if recipients can comment or just view the •    Add Recipients •   Did you enter the email addresses of everyone who needs •    Send the Invitation confusion for your recipients. •   Did you enter the email addresses of clients, agents, and other •    Send the Invitation",
+      "keyphrases": [
+        "add recipients",
+        "add recipients did",
+        "recipients comment",
+        "invitation confusion recipients",
+        "recipients comment just"
+      ]
+    }
+  ]
+}

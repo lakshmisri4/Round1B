@@ -1,0 +1,108 @@
+{
+  "metadata": {
+    "input_documents": [
+      "Learn Acrobat - Create and Convert_1.pdf",
+      "Learn Acrobat - Create and Convert_2.pdf",
+      "Learn Acrobat - Edit_1.pdf",
+      "Learn Acrobat - Edit_2.pdf",
+      "Learn Acrobat - Export_1.pdf",
+      "Learn Acrobat - Export_2.pdf",
+      "Learn Acrobat - Fill and Sign.pdf",
+      "Learn Acrobat - Generative AI_1.pdf",
+      "Learn Acrobat - Generative AI_2.pdf",
+      "Learn Acrobat - Request e-signatures_1.pdf",
+      "Learn Acrobat - Request e-signatures_2.pdf",
+      "Learn Acrobat - Share_1.pdf",
+      "Learn Acrobat - Share_2.pdf",
+      "Test Your Acrobat Exporting Skills.pdf",
+      "The Ultimate PDF Sharing Checklist.pdf"
+    ],
+    "persona": "HR professional",
+    "job_to_be_done": "Create and manage fillable forms for onboarding and compliance.",
+    "processing_timestamp": "2025-07-27T21:36:07.794869"
+  },
+  "extracted_sections": [
+    {
+      "document": "Learn Acrobat - Create and Convert_1.pdf",
+      "section_title": "Section 1",
+      "importance_rank": 1,
+      "page_number": 1
+    },
+    {
+      "document": "Learn Acrobat - Create and Convert_2.pdf",
+      "section_title": "Section 1",
+      "importance_rank": 1,
+      "page_number": 1
+    },
+    {
+      "document": "Learn Acrobat - Edit_1.pdf",
+      "section_title": "Section 1",
+      "importance_rank": 1,
+      "page_number": 1
+    },
+    {
+      "document": "Learn Acrobat - Edit_2.pdf",
+      "section_title": "Section 1",
+      "importance_rank": 1,
+      "page_number": 1
+    },
+    {
+      "document": "Learn Acrobat - Export_1.pdf",
+      "section_title": "Section 1",
+      "importance_rank": 1,
+      "page_number": 1
+    }
+  ],
+  "subsection_analysis": [
+    {
+      "document": "Learn Acrobat - Create and Convert_1.pdf",
+      "refined_text": "Do any of the following: Note: Note: Note: Note: • Note: Do any of the following: Note: Note: 3.",
+      "page_number": 1
+    },
+    {
+      "document": "Learn Acrobat - Create and Convert_2.pdf",
+      "refined_text": "Create Bookmarks Converts certain elements in original Office documents to PDF bookmarks: Word headings,  Excel worksheet names, or PowerPoint titles.",
+      "page_number": 1
+    },
+    {
+      "document": "Learn Acrobat - Edit_1.pdf",
+      "refined_text": "add superscripts or subscripts, and resize text or paragraphs.",
+      "page_number": 1
+    },
+    {
+      "document": "Learn Acrobat - Edit_2.pdf",
+      "refined_text": "In the left pane, under  PAGE OPTIONS , select  Split.",
+      "page_number": 1
+    },
+    {
+      "document": "Learn Acrobat - Export_1.pdf",
+      "refined_text": "On Windows, choose the hamburger      Menu  >  Undo, Redo & more  >  Revert .",
+      "page_number": 1
+    },
+    {
+      "document": "Learn Acrobat - Export_2.pdf",
+      "refined_text": "Select  All tools  >  Use print production  >  Edit object .",
+      "page_number": 1
+    },
+    {
+      "document": "Learn Acrobat - Fill and Sign.pdf",
+      "refined_text": "Select the text field again and enter your text.",
+      "page_number": 1
+    },
+    {
+      "document": "Learn Acrobat - Generative AI_1.pdf",
+      "refined_text": "This is currently not available to users.",
+      "page_number": 1
+    },
+    {
+      "document": "Learn Acrobat - Generative AI_2.pdf",
+      "refined_text": "Multiple document support in AI Assistant GenAl Assistant allows users to process up to 10 documents simultaneously, including non- PDF formats (.doc, .docx, .rtf, .txt, .ppt, .pptx), each up to 600 pages and 100MB.",
+      "page_number": 1
+    },
+    {
+      "document": "Learn Acrobat - Request e-signatures_1.pdf",
+      "refined_text": "The Mail and Message fields are just like the ones you use for sending an email and appear to your recipients in the same way.",
+      "page_number": 1
+    }
+  ]
+}
