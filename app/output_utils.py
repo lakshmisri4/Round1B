@@ -1,5 +1,3 @@
-# output_utils.py
-
 import json
 
 def save_final_json(metadata, sections, keyphrases, output_path):

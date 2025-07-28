@@ -5,7 +5,7 @@ from pathlib import Path
 import nltk
 from nltk.tokenize.punkt import PunktSentenceTokenizer, PunktParameters
 
-# NLTK setup
+
 nltk.download('punkt')
 punkt_params = PunktParameters()
 punkt_tokenizer = PunktSentenceTokenizer(punkt_params)
@@ -26,7 +26,7 @@ def collect_processed_data(documents):
         parsed_path = f"output/{doc_name}_parsed.json"
 
         if not os.path.exists(parsed_path):
-            print(f"⚠️ Skipping missing: {parsed_path}")
+            print(f"Skipping missing: {parsed_path}")
             continue
 
         with open(parsed_path, "r", encoding="utf-8") as f:
@@ -54,7 +54,7 @@ def collect_processed_data(documents):
                             "page_number": page_num
                         })
 
-    # Deduplicate by sentence & keep 5–10 diverse records from different PDFs
+    
     unique_analysis = []
     seen_docs = set()
     for item in subsection_analysis_all:
@@ -87,10 +87,10 @@ def save_final_output(input_data, extracted_sections, subsection_analysis):
     with open(OUTPUT_JSON, "w", encoding="utf-8") as f:
         json.dump(output, f, indent=2, ensure_ascii=False)
 
-    print(f"\n✅ Final output saved to {OUTPUT_JSON}")
+    print(f"\nFinal output saved to {OUTPUT_JSON}")
 
 def main():
-    print("🚀 Starting final aggregation...")
+    print("Starting final aggregation...")
     input_data = load_input_metadata(INPUT_JSON)
     extracted_sections, subsection_analysis = collect_processed_data(input_data["documents"])
     save_final_output(input_data, extracted_sections, subsection_analysis)

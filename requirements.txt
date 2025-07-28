@@ -3,5 +3,5 @@ sentence-transformers
 keybert
 scikit-learn
 numpy
-torch
 transformers
+torch==2.0.1+cpu  

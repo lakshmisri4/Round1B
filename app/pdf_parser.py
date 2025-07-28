@@ -1,4 +1,4 @@
-import fitz  # PyMuPDF
+import fitz  
 import os
 import json
 
@@ -11,7 +11,7 @@ def extract_text_with_positions(pdf_path):
         blocks = page.get_text("dict")["blocks"]
 
         for block in blocks:
-            if "lines" in block:  # skip non-text blocks
+            if "lines" in block: 
                 text = ""
                 for line in block["lines"]:
                     for span in line["spans"]:

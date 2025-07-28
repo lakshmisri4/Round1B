@@ -1,5 +1,3 @@
-# app/keyphrase_extractor.py
-
 from keybert import KeyBERT
 
 class KeyphraseExtractor:
@@ -8,12 +6,9 @@ class KeyphraseExtractor:
         self.kw_model = KeyBERT(model=model_path)
 
     def extract_keywords(self, section_text, top_n=5):
-        """
-        Extracts top N keyphrases from a section.
-        """
         keywords = self.kw_model.extract_keywords(
             section_text,
-            keyphrase_ngram_range=(1, 3),  # Allow unigrams to trigrams
+            keyphrase_ngram_range=(1, 3),
             stop_words='english',
             top_n=top_n
         )
